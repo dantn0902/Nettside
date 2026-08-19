@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Thanh</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="home.css" />
+    <meta charset="UTF-8" />
+    <title>Thanh - Home</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./home.css" />
   </head>
   <body>
     <div id="root">
@@ -14,25 +15,12 @@
           </div>
         </div>
         <div id="right">
-          <b id="title">Dan Thanh Ngu</b>
+          <b id="name-title">Dan Thanh Ngu</b>
           <p id="intro">
             Hello! This is my personal website. Here you can find my blog,
             projects, and my contact information. I am currently a master
             student at UiO studying programming and systemarchitecture
           </p>
-
-          <!--Blog-->
-          <div id="link-section">
-            <a class="icon" title="blog" href="blog.html">
-              <img src="photos/snowman.jpg" id="photo" />
-              <span>Blog</span>
-            </a>
-            <a class="right-link" title="newest post" href="posts/post.html">
-              <h2 class="post-title">Alle må prøve samlesing!</h2>
-              <p class="post-text">Date</p>
-              <p class="post-text">small description</p>
-            </a>
-          </div>
 
           <!--CV-->
           <div id="link-section">
@@ -40,10 +28,24 @@
               <img src="photos/snowman.jpg" id="photo" />
               <span>CV</span>
             </a>
-            <a class="right-link" title="newest post" href="posts/post.html">
-              <h2>Newest Post</h2>
-              <p>Date</p>
-              <p>small description</p>
+            <a class="right-link" title="Download cv" href="Thanh_CV_eng.pdf">
+              <h2>Download CV</h2>
+              <p style="color: antiquewhite">last updated: 19.08.26</p>
+            </a>
+          </div>
+
+          <!--Blog-->
+          <div id="link-section">
+            <a class="icon" title="blog" href="blog.html">
+              <img src="photos/snowman.jpg" id="photo" />
+              <span>Blog</span>
+            </a>
+            <a class="right-link" href="post.html?post=creating-my-own-webpage">
+              <h2>Creating my own webpage</h2>
+              <p style="color: antiquewhite">2026-08-13</p>
+              <p style="color: antiquewhite">
+                Why did I create my own webpage?
+              </p>
             </a>
           </div>
 
@@ -53,7 +55,7 @@
               <img src="photos/snowman.jpg" id="photo" />
               <span>Projects</span>
             </a>
-            <a class="right-link" title="newest Project" href="posts/post.html">
+            <a class="right-link" title="newest Project" href="post.html">
               <p>Newest Project</p>
             </a>
           </div>

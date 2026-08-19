@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="page-title"></title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./post.css" />
+  </head>
+  <body>
+    <div>
+      <button onclick="history.back()">Go Back</button>
+      <h1 id="post-title"></h1>
+      <time id="date"></time>
+
+      <article id="content"></article>
+
+      <div id="bottom"></div>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const postName = params.get("post");
+
+      if (!postName) {
+        document.body.innerHTML = "<h1>No post specified</h1>";
+      } else {
+        fetch(`posts/${postName}.txt`)
+          .then((response) => {
+            console.log("Trying to load:", `posts/${postName}.txt`);
+            console.log("Status:", response.status);
+
+            if (!response.ok) {
+              throw new Error(
+                `Could not load posts/${postName}.txt (${response.status})`,
+              );
+            }
+            return response.text();
+          })
+          .then((text) => {
+            const parts = text.split(/\r?\n\r?\n/);
+
+            const metadata = parts[0];
+            const content = parts.slice(1).join("\n\n");
+
+            const title = metadata.match(/^title:\s*(.+)$/m)?.[1] || "";
+            const date = metadata.match(/^date:\s*(.+)$/m)?.[1] || "";
+
+            document.getElementById("page-title").textContent = title;
+            document.getElementById("post-title").textContent = title;
+            document.getElementById("date").textContent = date;
+
+            document.getElementById("content").innerHTML = content
+              .split(/\r?\n\r?\n/)
+              .map(
+                (paragraph) => `<p>${paragraph.replace(/\r?\n/g, "<br>")}</p>`,
+              )
+              .join("");
+          })
+          .catch((error) => {
+            console.error(error);
+            document.getElementById("content").textContent =
+              "Error: " + error.message;
+          });
+      }
+    </script>
+  </body>
+</html>

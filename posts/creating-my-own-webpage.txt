@@ -1,0 +1,16 @@
+title: Creating my own webpage
+date: 2026-08-13
+description: Why did I create my own webpage?
+
+This is my first post. So I thought the most fitting topic for my first ever post on this site is why I created it in the first place.
+
+I've always had the idea to create my own webpage in the back of my mind since I first started programming in high school. HTML and CSS were 2 of the first languages I learned after all. 
+I always liked designing. Choosing colours, composition, making things look pretty. I really liked CSS because it was kind of different from drawing by hand. You had think in a different way.
+With pen and paper you could just put a photo or part of a drawing where you wanted it, but with computers you had to think about layers and state the angle and percentages, so I found it fun to just play around with the different numbers.
+
+I never really really seriously thought about it until a friend of mine came up to me and said she wanted to do it for her CV, and that made me really think. The job market within IT isn't looking the createst right now.
+The ones that get interviews and jobs are really the ones that have an interesting resume, and I thought creating a webpage as a resume gives kind of a different edge that people outside of programming don't have. It also communicates things that traditional resumes can't.
+An example is colours and design. Usual resumes are just in a word document, but if I give people a website then they can also see my overall vibe and know me much more than a sheet of paper can tell you. I like deep red and emerald green, cute things and i like to play games, and yes, you can read about this in my resume, but it's different when you can see it.
+
+From then on I have thought about creating a website for myself, but I never did. I had put it off until now because I just didn't know what the website would be. I looked around the internet for insperation, but I couldn't justify the time it takes creating an entire page just for a resume.
+But then I met someone who had already created his own page and what I saw was really cool! He didn't just use it as a resume, but he had a blog and socials and projects on it. He used it kind of like his personal hub where everything was connected. From what I had seen before which were just a resume and projects, this was much more personalized.

@@ -1,14 +1,183 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Thanh's CV</title>
+    <title>Thanh - CV</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="cv.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-yK3dL9x... (you can omit integrity if you like)
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
   </head>
   <body>
-    <div>
-      <p>Thanh's CV</p>
-      <!-- Back button -->
-      <button onclick="history.back()">Go Back</button>
+    <div id="root">
+      <div id="main">
+        <div class="info" style="padding: 1%; margin-bottom: 1rem;">
+          <div style="display: flex; border-bottom: 5px solid #800000">
+            <div id="header">
+              <b id="name-title">Dan Thanh Ngu</b>
+              <b>CV</b>
+            </div>
+            <a id="download" title="Download cv" href="Thanh_CV_eng.pdf">
+              <h2>Download CV</h2>
+            </a>
+          </div>
+
+          <b>Master student at UiO studying programming and system architecture</b>
+          <p id="profile">
+            I am a cheerful and hardworking student with a creative mind at UiO,
+            studying programming and system architecture. Through my studies I
+            have developed strong skills in teamwork and agile development, and
+            gained experience with designing, implementing and testing software
+            solutions. I enjoy learning new technologies and solving technical
+            challenges in a structured and creative way.
+          </p>
+        </div>
+
+        <div id="content">
+          <div id="left">
+            <div class="info" ><!--contact info-->
+              <p class="under-topic">Contact Info</p>
+              <ul id="contact-list">
+                <!--<li>
+                  <i class="fa-solid fa-at"></i>
+                  @
+                </li>-->
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <a href="mailto:danthanhngu@gmail.com">danthanhngu@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/dan-thanh-ngu-a34797299/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/dantn0902"
+                    >github.com/dantn0902</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Oslo, Norway
+                </li>
+              </ul>
+            </div><!--tech-->
+            <div class="info" >
+              <p class="under-topic">Programming Languages</p>
+              <p>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Kotlin</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Git & Github</span>
+              </p>
+            </div>
+            <div class="info" ><!--lang-->
+              <p class="under-topic">Languages</p>
+
+              <div class="lang-row">
+                <span class="lang-name">Norwegian</span>
+                <span class="lang-lvl">Fluent</span>
+              </div>
+
+              <div class="lang-row">
+                <span class="lang-name">English</span>
+                <span class="lang-lvl">Fluent</span>
+              </div>
+
+              <div class="lang-row">
+                <span class="lang-name">Vietnamese</span>
+                <span class="lang-lvl">Fluent</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="right">
+            <p class="under-topic">Education</p>
+
+            <div class="edu-entry">
+              <div class="edu-main">
+                <span class="edu-title">Master in Programming and System Architecture</span>
+                <span class="edu-dates">2025-present</span>
+              </div>
+              <div class="edu-sub">
+                Department of Informatics · <em>University of Oslo (UiO)</em>
+              </div>
+              <p class="edu-desc">
+                Worked with programming, data handling and modelling, including developing and evaluating software solutions.
+              </p>
+            </div>
+
+            <div class="edu-entry">
+              <div class="edu-main">
+                <span class="edu-title">Bachelor in Programming and System Architecture</span>
+                <span class="edu-dates">2022-2025</span>
+              </div>
+              <div class="edu-sub">
+                Department of Informatics · <em>University of Oslo (UiO)</em>
+              </div>
+              <p class="edu-desc">
+                Coursework in algorithms and data structures, software development, database systems and system architecture.
+              </p>
+            </div>
+
+            <div class="edu-entry">
+              <div class="edu-main">
+                <span class="edu-title">Art, Design and Architecture</span>
+                <span class="edu-dates">2019-2022</span>
+              </div>
+              <div class="edu-sub">
+                <em>Elvebakken VGS</em>
+              </div>
+              <p class="edu-desc">
+                Studied arts, design and architecture.
+              </p>
+            </div>
+
+            <p class="under-topic">Work Experience</p>
+
+            <div class="job-entry">
+              <div class="job-main">
+                <span class="job-title">On-call Postal Worker</span>
+                <span class="job-dates">2019.04-present</span>
+              </div>
+              <div class="job-sub">
+                <em>Posten Norge AS</em>
+              </div>
+              <p class="job-desc">
+                Handled and sorted large volumes of mail at a high pace to ensure correct and efficient distribution.
+              </p>
+            </div>
+
+            <div class="job-entry">
+              <div class="job-main">
+                <span class="job-title">Cashier at Festival</span>
+                <span class="job-dates">2022</span>
+              </div>
+              <div class="job-sub">
+                <em>Mekong Kjøkken</em>
+              </div>
+              <p class="job-desc">
+                Worked as a cashier at Elvefestivalen, handling orders, payments and customer service.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
       <div id="bottom"></div>
     </div>
   </body>

@@ -15,7 +15,7 @@
   .half-circle-photo {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* clips img to shape */
+    overflow: hidden;
     border-radius: 0 50% 50% 0;
     border: 10px solid #800000;
     border-left: none;
@@ -33,14 +33,15 @@
     align-items: start;
     overflow-y: auto; /* vertical scroll */
   }
-  #title {
-    padding: 50% 0 0 0;
+  #name-title {
+    padding: 50% 0 10% 0;
     font-size: 64px;
     color: #800000;
     position: relative;
+    text-decoration: underline;
   }
   /* blinking cursor */
-  #title::after {
+  #name-title::after {
     content: "|";
     display: inline-block;
     margin-left: 4px;
@@ -80,14 +81,14 @@
     height: 100%;
     display: block;
     box-shadow: 0 4px 10px #800000;
-    border-radius: 20%;
+    border-radius: 1rem;
     padding: 1%;
     text-decoration: none;
+    color: antiquewhite;
+    background-color: rgba(128, 0, 0, 0.9);
   }
-  .post-title {
-    color: #800000;
-  }
-  .post-text {
-    color: #630101;
+
+  .right-link:hover {
+    background-color: rgb(140, 0, 0);
   }
 }
