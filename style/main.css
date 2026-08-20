@@ -3,9 +3,9 @@
 }
 
 @media (min-width: 768px) {
-  /* Styles for laptop and larger screens */
   body {
-    background-image: url("./photos/gridbg.jpg");
+    background-image: url("/photos/gridbg.jpg"); /*For when I use local host*/
+    background-image: url("../photos/gridbg.jpg"); /*For when I open html file*/
     background-repeat: repeat;
     background-size: 500px 225px;
     background-position: top left;
@@ -13,12 +13,18 @@
     overflow: hidden;
     font-family: "Courier New", Courier, monospace;
   }
+
   #root {
     flex-direction: column;
     min-height: 100vh;
     display: flex;
   }
+
   p {
     color: #800000;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

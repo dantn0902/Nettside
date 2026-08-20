@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Thanh - Blog</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/blog.css" />
   </head>
   <body>
     <div id="root">
-      <div id="content">
-        <p>Thanh's blog</p>
-        <!-- Back button -->
-        <button onclick="history.back()">Go Back</button>
+      <div id="main">
+        <h2 id="name-title">Thanh's Blog</h2>
+
+        <div id="post-list">Loading…</div>
       </div>
       <div id="bottom"></div>
     </div>
+
+    <script src="./blog.js"></script>
   </body>
 </html>

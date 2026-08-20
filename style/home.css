@@ -74,7 +74,6 @@
   }
   .icon {
     align-items: center;
-    text-decoration: none;
   }
   .right-link {
     width: 90%;
@@ -83,8 +82,8 @@
     box-shadow: 0 4px 10px #800000;
     border-radius: 1rem;
     padding: 1%;
-    text-decoration: none;
-    color: antiquewhite;
+    background-color: #fcfbf8;
+    color: #fcfbf8;
     background-color: rgba(128, 0, 0, 0.9);
   }
 

@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  /* Styles for tablet and smaller screens */
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 0%;
+    align-items: center;
+  }
+  #main {
+    align-items: center;
+    width: 60%;
+    padding-top: 5%;
+    display: grid;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  #name-title {
+    font-size: 3rem;
+    color: #800000;
+    text-decoration: underline;
+  }
+
+  .preview {
+    display: block;
+    border-left: 3px solid #800000;
+    background-color: rgba(255, 223, 213, 0.8);
+    border-radius: 0.25rem;
+    color: #800000;
+  }
+}
