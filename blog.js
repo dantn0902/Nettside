@@ -11,7 +11,6 @@ function parsePostText(text) {
   while (i < lines.length) {
     const line = lines[i].trim();
     if (line === "") {
-      // blank line = end of header
       i++;
       break;
     }
@@ -27,7 +26,7 @@ function parsePostText(text) {
     i++;
   }
 
-  // Rest is body
+  // Rest body
   const bodyLines = lines.slice(i);
   return { title, date, description, bodyLines };
 }
@@ -36,7 +35,6 @@ async function loadPosts() {
   const list = document.getElementById("post-list");
 
   try {
-    // For now, one hardcoded post file
     const res = await fetch("posts/creating-my-own-webpage.txt");
     if (!res.ok) {
       list.textContent = "Failed to load post file: " + res.status;
@@ -48,7 +46,6 @@ async function loadPosts() {
 
     list.textContent = "";
 
-    // Build the preview card like your CV education cards
     const a = document.createElement("a");
     a.className = "preview";
     a.href = "post.html?post=creating-my-own-webpage";

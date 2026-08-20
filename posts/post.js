@@ -34,7 +34,7 @@ async function loadPost() {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("post");
 
-  // For now, we only support "creating-my-own-webpage"
+  // Only support "creating-my-own-webpage" for now
   if (slug !== "creating-my-own-webpage") {
     contentEl.textContent = "Post not found.";
     return;
@@ -56,12 +56,10 @@ async function loadPost() {
       .map((line) => `<p>${line}</p>`)
       .join("");
 
-    // Put title/date in the header, outside the box
     document.getElementById("post-title").textContent = title;
     document.getElementById("post-date").textContent = date;
     document.getElementById("post-desc").textContent = description;
 
-    // Put description + body inside the box
     contentEl.innerHTML = `
       <div class="post-body">
         ${bodyHtml}
