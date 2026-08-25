@@ -1,33 +1,28 @@
-body {
-  overflow-y: scroll;
-}
-#root {
-  padding: 0%;
-  align-items: center;
-}
 #main {
   align-items: center;
-  width: 80%;
+  width: 75%;
   padding-top: 5%;
   padding: 7% 2% 2% 2%;
   display: grid;
-  height: 100%;
+  height: 100vh;
   overflow-y: auto;
   box-sizing: border-box;
-  background-color: #fcfbf8;
-}
-b {
-  color: #800000;
 }
 
 #name-title {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #800000;
   position: relative;
 }
-#header {
+#page-title {
   display: flex;
   align-items: baseline;
+}
+.card {
+  border-left: 3px solid #800000;
+  background-color: rgba(252, 251, 248, 0.8);
+  border-radius: 0.3rem;
+  color: #800000;
 }
 #download {
   margin-left: auto;
@@ -126,60 +121,47 @@ b {
   padding: 0 0.5rem;
 }
 
-/* Right column spacing */
-#right {
+.column {
   padding-left: 1rem;
 }
 
-/* Entries: card-like, clear separation */
-.edu-entry,
-.job-entry {
+.entry {
   margin-top: 0.75rem;
   padding: 0.5rem 0.75rem;
   border-left: 3px solid #800000;
-  background-color: rgba(255, 223, 213, 0.5); /* subtle pink background */
+  background-color: rgba(255, 223, 213, 0.5);
   border-radius: 0.25rem;
 }
 
-/* Main line: title left, dates right */
-.edu-main,
-.job-main {
+.main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-/* Titles and dates */
-.edu-title,
-.job-title {
+.title {
   font-weight: 600;
   color: #800000;
 }
 
-.edu-dates,
-.job-dates {
+.dates {
   font-weight: 500;
   color: #800000;
 }
 
-/* Sub line: department / company */
-.edu-sub,
-.job-sub {
+.sub {
   font-size: 0.9rem;
   color: #800000;
   margin-top: 0.1rem;
 }
 
-/* Descriptions: slightly smaller, more relaxed line height */
-.edu-desc,
-.job-desc {
+.desc {
   font-size: 0.9rem;
   color: #800000;
   margin-top: 0.25rem;
   line-height: 1.4;
 }
 
-/* Reduce default p margins inside #right */
 #right p {
   margin: 0.25rem 0;
 }

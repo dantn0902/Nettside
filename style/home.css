@@ -31,7 +31,7 @@
     padding-left: 10vh;
     display: grid;
     align-items: start;
-    overflow-y: auto; /* vertical scroll */
+    overflow-y: auto;
   }
   #name-title {
     padding: 50% 0 10% 0;
@@ -74,7 +74,21 @@
   }
   .icon {
     align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    box-shadow: 0 4px 10px #800000;
+    border-radius: 1rem;
+    padding: 1%;
+    color: #fcfbf8;
+    background-color: rgba(128, 0, 0, 0.9);
   }
+
+  .icon span {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
   .right-link {
     width: 90%;
     height: 100%;
@@ -82,12 +96,12 @@
     box-shadow: 0 4px 10px #800000;
     border-radius: 1rem;
     padding: 1%;
-    background-color: #fcfbf8;
     color: #fcfbf8;
     background-color: rgba(128, 0, 0, 0.9);
   }
 
-  .right-link:hover {
+  .right-link:hover,
+  .icon:hover {
     background-color: rgb(140, 0, 0);
   }
 }

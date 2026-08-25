@@ -1,5 +1,5 @@
 function parsePostText(text) {
-  const lines = text.split("\n");
+  const lines = text.replace(/\r\n/g, "\n").split("\n");
 
   let title = "";
   let date = "";
@@ -7,6 +7,7 @@ function parsePostText(text) {
 
   let i = 0;
 
+  // Read data until first blank line
   while (i < lines.length) {
     const line = lines[i].trim();
     if (line === "") {
@@ -34,7 +35,6 @@ async function loadPost() {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("post");
 
-  // Only support "creating-my-own-webpage" for now
   if (slug !== "creating-my-own-webpage") {
     contentEl.textContent = "Post not found.";
     return;
@@ -50,11 +50,30 @@ async function loadPost() {
     const text = await res.text();
     const { title, date, description, bodyLines } = parsePostText(text);
 
-    const bodyHtml = bodyLines
-      .map((line) => line.trim())
-      .filter((line) => line.length)
-      .map((line) => `<p>${line}</p>`)
-      .join("");
+    const bodyHtml = (() => {
+      const paras = [];
+      let current = [];
+
+      for (const rawLine of bodyLines) {
+        const line = rawLine.trim();
+
+        if (line === "") {
+          if (current.length) {
+            paras.push(current.join(" "));
+            current = [];
+          }
+        } else {
+          current.push(line);
+        }
+      }
+
+      // last paragraph
+      if (current.length) {
+        paras.push(current.join(" "));
+      }
+
+      return paras.map((p) => `<p>${p}</p>`).join("");
+    })();
 
     document.getElementById("post-title").textContent = title;
     document.getElementById("post-date").textContent = date;

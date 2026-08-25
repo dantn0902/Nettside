@@ -12,12 +12,16 @@
     margin: 0 8px 0 0;
     overflow: hidden;
     font-family: "Courier New", Courier, monospace;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 0, 0, 0.7) transparent;
   }
 
   #root {
     flex-direction: column;
     min-height: 100vh;
     display: flex;
+    padding: 0%;
+    align-items: center;
   }
 
   p {
