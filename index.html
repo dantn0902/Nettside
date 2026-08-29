@@ -5,6 +5,13 @@
     <title>Thanh - Home</title>
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-yK3dL9x... (you can omit integrity if you like)"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="root">
@@ -60,9 +67,107 @@
             </a>
           </div>
           -->
+
+          <!--Socials-->
+          <div id="link-section single">
+            <a class="icon" id="socials-button" title="Socials">
+              <span>Socials</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Socials Popup -->
+        <div id="popup-overlay">
+          <div id="popup-card">
+            <div class="popup-header">
+              <span class="popup-title">Socials</span>
+              <button class="popup-close" aria-label="Close">&times;</button>
+            </div>
+
+            <ul class="popup-social-list">
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:danthanhngu@gmail.com">danthanhngu@gmail.com</a>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/dan-thanh-ngu-a34797299/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/dantn0902" target="_blank">
+                  github.com/dantn0902
+                </a>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+                <a
+                  href="https://www.instagram.com/thanhthanh_0o0_/"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-steam"></i>
+                <a
+                  href="https://steamcommunity.com/profiles/76561199482774808/"
+                  target="_blank"
+                >
+                  Steam
+                </a>
+              </li>
+              <!--
+              <li>
+                <i class="fa-brands fa-discord"></i>
+                <span>CrybabyTT</span>
+                or use a link if you have a server/invite:
+                <a href="https://discord.gg/YOUR_INVITE_HERE" target="_blank">Discord Server</a>
+              </li>-->
+            </ul>
+          </div>
         </div>
       </div>
       <div id="bottom"></div>
     </div>
+    <script>
+      const socialsButton = document.getElementById("socials-button");
+      const popupOverlay = document.getElementById("popup-overlay");
+      const popupClose = document.querySelector(".popup-close");
+
+      // Open popup
+      socialsButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        popupOverlay.classList.add("active");
+      });
+
+      // Closing X
+      popupClose.addEventListener("click", () => {
+        popupOverlay.classList.remove("active");
+      });
+
+      // Close when clicking outside the card
+      popupOverlay.addEventListener("click", (event) => {
+        if (event.target === popupOverlay) {
+          popupOverlay.classList.remove("active");
+        }
+      });
+
+      //close with Escape key
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          popupOverlay.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>
