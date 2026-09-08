@@ -5,6 +5,7 @@
     <title>Thanh - Home</title>
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/popup.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -74,66 +75,87 @@
               <span>Socials</span>
             </a>
           </div>
-        </div>
 
-        <!-- Socials Popup -->
-        <div id="popup-overlay">
-          <div id="popup-card">
-            <div class="popup-header">
-              <span class="popup-title">Socials</span>
-              <button class="popup-close" aria-label="Close">&times;</button>
-            </div>
+          <!-- Socials Popup -->
+          <div id="popup-overlay">
+            <div id="popup-card">
+              <div class="popup-header">
+                <span class="popup-title">Socials</span>
+                <button class="popup-close" aria-label="Close">&times;</button>
+              </div>
 
-            <ul class="popup-social-list">
-              <li>
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:danthanhngu@gmail.com">danthanhngu@gmail.com</a>
-              </li>
+              <div class="popup-links-grid">
+                <a class="icon popup-icon" href="mailto:danthanhngu@gmail.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Email</span>
+                </a>
 
-              <li>
-                <i class="fa-brands fa-linkedin"></i>
                 <a
+                  class="icon popup-icon"
                   href="https://www.linkedin.com/in/dan-thanh-ngu-a34797299/"
                   target="_blank"
                 >
-                  LinkedIn
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
                 </a>
-              </li>
 
-              <li>
-                <i class="fa-brands fa-github"></i>
-                <a href="https://github.com/dantn0902" target="_blank">
-                  github.com/dantn0902
-                </a>
-              </li>
-
-              <li>
-                <i class="fa-brands fa-instagram"></i>
                 <a
+                  class="icon popup-icon"
+                  href="https://github.com/dantn0902"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  class="icon popup-icon"
                   href="https://www.instagram.com/thanhthanh_0o0_/"
                   target="_blank"
                 >
-                  Instagram
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
                 </a>
-              </li>
 
-              <li>
-                <i class="fa-brands fa-steam"></i>
                 <a
+                  class="icon popup-icon"
                   href="https://steamcommunity.com/profiles/76561199482774808/"
                   target="_blank"
                 >
-                  Steam
+                  <i class="fa-brands fa-steam"></i>
+                  <span>Steam</span>
                 </a>
-              </li>
-              <!--
-              <li>
-                <i class="fa-brands fa-discord"></i>
-                <span>CrybabyTT</span>
-                or use a link if you have a server/invite:
-                <a href="https://discord.gg/YOUR_INVITE_HERE" target="_blank">Discord Server</a>
-              </li>-->
-            </ul>
+
+                <a
+                  class="icon popup-icon"
+                  id="discord-copy"
+                  title="Kopier Discord-brukernavn"
+                >
+                  <i class="fa-brands fa-discord"></i>
+                  <span id="discord-label">CrybabyTT</span>
+                </a>
+
+                <a
+                  class="icon popup-icon"
+                  href="https://www.goodreads.com/user/show/188890629-thanh"
+                  title="Goodreads"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>Goodreads</span>
+                </a>
+
+                <a
+                  class="icon popup-icon"
+                  href="https://app.notion.com/p/b-i-b-l-o-t-e-k-e-t-1a43320349774729842d40873ae7cd3f"
+                  title="Notion"
+                  target="_blank"
+                >
+                  <i class="fa-regular fa-note-sticky"></i>
+                  <span>Library</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -162,11 +184,36 @@
         }
       });
 
-      //close with Escape key
+      // Close Escape key
       document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
           popupOverlay.classList.remove("active");
         }
+      });
+
+      const discordButton = document.getElementById("discord-copy");
+      const discordLabel = document.getElementById("discord-label");
+      const discordName = "CrybabyTT";
+
+      discordButton.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        navigator.clipboard
+          .writeText(discordName)
+          .then(() => {
+            // Feedback
+            const originalText = discordLabel.textContent;
+            discordLabel.textContent = "Copied!";
+
+            setTimeout(() => {
+              discordLabel.textContent = originalText;
+              discordButton.title = "Copy Discord-username";
+            }, 1500);
+          })
+          .catch(() => {
+            // Fallback: if clipboard isn't working
+            alert("Couldn't copy. Copy manually: " + discordName);
+          });
       });
     </script>
   </body>
