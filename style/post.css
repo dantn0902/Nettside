@@ -14,8 +14,8 @@
 }
 
 #name-title {
-  color: #800000;
   margin-top: 0;
+  text-decoration: underline;
 }
 
 #title-card {

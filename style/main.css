@@ -31,4 +31,26 @@
   a {
     text-decoration: none;
   }
+
+  #name-title {
+    font-size: 3rem;
+    color: #800000;
+  }
+
+  #name-title::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 4px;
+    animation: blink 1s step-start infinite;
+  }
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    50.01%,
+    100% {
+      opacity: 0;
+    }
+  }
 }

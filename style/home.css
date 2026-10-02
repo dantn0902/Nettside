@@ -34,29 +34,12 @@
     overflow-y: auto;
   }
   #name-title {
+    font-size: 4rem;
     padding: 50% 0 10% 0;
-    font-size: 64px;
-    color: #800000;
     position: relative;
     text-decoration: underline;
   }
-  /* blinking cursor */
-  #name-title::after {
-    content: "|";
-    display: inline-block;
-    margin-left: 4px;
-    animation: blink 1s step-start infinite;
-  }
-  @keyframes blink {
-    0%,
-    50% {
-      opacity: 1;
-    }
-    50.01%,
-    100% {
-      opacity: 0;
-    }
-  }
+
   #intro {
     font-size: 20px;
     color: #5b0000;
@@ -91,6 +74,23 @@
     margin: 0;
     font-size: 1.4rem;
   }
+  /*
+  .icon::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 4px;
+    animation: blink 1s step-start infinite;
+  }
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    50.01%,
+    100% {
+      opacity: 0;
+    }
+  }*/
 
   .right-link {
     width: 90%;

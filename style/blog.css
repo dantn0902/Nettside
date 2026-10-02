@@ -13,8 +13,6 @@
     box-sizing: border-box;
   }
   #name-title {
-    font-size: 3rem;
-    color: #800000;
     text-decoration: underline;
   }
 

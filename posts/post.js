@@ -75,7 +75,7 @@ async function loadPost() {
       return paras.map((p) => `<p>${p}</p>`).join("");
     })();
 
-    document.getElementById("post-title").textContent = title;
+    document.getElementById("name-title").textContent = title;
     document.getElementById("post-date").textContent = date;
     document.getElementById("post-desc").textContent = description;
 
