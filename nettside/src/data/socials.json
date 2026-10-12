@@ -1,0 +1,53 @@
+[
+  {
+    "href": "mailto:danthanhngu@gmail.com",
+    "label": "Email",
+    "iconClass": "fa-regular fa-envelope"
+  },
+  {
+    "href": "https://www.linkedin.com/in/dan-thanh-ngu-a34797299/",
+    "label": "LinkedIn",
+    "iconClass": "fa-brands fa-linkedin",
+    "targetBlank": true
+  },
+  {
+    "href": "https://github.com/dantn0902",
+    "label": "GitHub",
+    "iconClass": "fa-brands fa-github",
+    "targetBlank": true
+  },
+  {
+    "href": "https://www.instagram.com/thanhthanh_0o0_/",
+    "label": "Instagram",
+    "iconClass": "fa-brands fa-instagram",
+    "targetBlank": true
+  },
+  {
+    "href": "https://steamcommunity.com/profiles/76561199482774808/",
+    "label": "Steam",
+    "iconClass": "fa-brands fa-steam",
+    "targetBlank": true
+  },
+  {
+    "href": "https://discord.com/users/650444124339568640",
+    "label": "CrybabyTT",
+    "iconClass": "fa-brands fa-discord",
+    "id": "discord-copy",
+    "title": "Copy Discord-username",
+    "targetBlank": true
+  },
+  {
+    "href": "https://www.goodreads.com/user/show/188890629-thanh",
+    "label": "Goodreads",
+    "iconClass": "fa-solid fa-book-open",
+    "title": "Goodreads",
+    "targetBlank": true
+  },
+  {
+    "href": "https://app.notion.com/p/b-i-b-l-o-t-e-k-e-t-1a43320349774729842d40873ae7cd3f",
+    "label": "Library",
+    "iconClass": "fa-regular fa-note-sticky",
+    "title": "Notion",
+    "targetBlank": true
+  }
+]

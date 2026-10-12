@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Grader at UiO",
+    "dates": "2026.09-present",
+    "organization": "University of Oslo",
+    "description": "I am a grader at UiO for the course IN1000 (introduction to object oriented programming)"
+  },
+  {
+    "title": "On-call Postal Worker",
+    "dates": "2019.04-present",
+    "organization": "Posten Norge AS",
+    "description": "Handled and sorted large volumes of mail at a high pace to ensure correct and efficient distribution."
+  },
+  {
+    "title": "Cashier at Festival",
+    "dates": "2022",
+    "organization": "Mekong Kjøkken",
+    "description": "Worked as a cashier at Elvefestivalen, handling orders, payments and customer service."
+  },
+  {
+    "title": "Volunteer helper",
+    "dates": "2021.09",
+    "organization": "Ultima Vannverk",
+    "description": "The artist looked for students that wanted to participate in the project. We helped prepare the performance art and helped under the performance as well."
+  }
+]

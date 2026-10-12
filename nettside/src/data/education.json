@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Master in Programming and System Architecture",
+    "dates": "2025-present",
+    "institution": "University of Oslo (UiO)",
+    "department": "Department of Informatics",
+    "description": "Worked with programming, data handling and modelling, including developing and evaluating software solutions."
+  },
+  {
+    "title": "Bachelor in Programming and System Architecture",
+    "dates": "2022-2025",
+    "institution": "University of Oslo (UiO)",
+    "department": "Department of Informatics",
+    "description": "Coursework in algorithms and data structures, software development, database systems and system architecture."
+  },
+  {
+    "title": "Art, Design and Architecture",
+    "dates": "2019-2022",
+    "institution": "Elvebakken VGS",
+    "description": "Studied arts, design and architecture."
+  }
+]

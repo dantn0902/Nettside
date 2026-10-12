@@ -1,0 +1,33 @@
+[
+  { "name": "Introduction to object oriented programming", "code": "IN1000" },
+  { "name": "Introduksjon til datateknologi", "code": "IN1020" },
+  { "name": "Examen philosophicum", "code": "EXPHIL03" },
+  { "name": "Objektorientert programmering", "code": "IN1010" },
+  { "name": "Systemer, krav og konsekvenser", "code": "IN1030" },
+  { "name": "Logiske metoder", "code": "IN1050" },
+  { "name": "Algoritmer og datastrukturer", "code": "IN2010" },
+  { "name": "Informasjonssikkerhet", "code": "IN2120" },
+  { "name": "Databaser og datamodellering", "code": "IN2090" },
+  { "name": "Software Engineering med prosjektarbeid", "code": "IN2000" },
+  {
+    "name": "Introduksjon til operativsystemer og datakommunikasjon",
+    "code": "IN2140"
+  },
+  { "name": "Funksjonell programmering", "code": "IN2040" },
+  { "name": "Prosjektoppgave i programmering", "code": "IN2031" },
+  {
+    "name": "Introduksjon til design, bruk, interaksjon",
+    "code": "IN1050"
+  },
+  { "name": "Testing av programvare", "code": "IN3240" },
+  { "name": "Databasesystemer", "code": "IN3020" },
+  { "name": "Astronomi", "code": "AST1010" },
+  { "name": "Development in platform ecosystems", "code": "IN5320" },
+  {
+    "name": "Smarte prosesser og smidige metoder i systemutvikling",
+    "code": "IN5140"
+  },
+  { "name": "Logikk", "code": "IN4070" },
+  { "name": "Introduksjon til bioinformatikk", "code": "IN4030" },
+  { "name": "Semantiske teknologier", "code": "IN4060" }
+]

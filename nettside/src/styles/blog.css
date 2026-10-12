@@ -13,6 +13,9 @@
     box-sizing: border-box;
   }
   #name-title {
+    font-size: 3rem;
+    color: #800000;
+    padding: 0;
     text-decoration: underline;
   }
 
