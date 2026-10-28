@@ -1,21 +1,19 @@
-#root {
+/* Individual blog post page */
+#page-header {
+  width: 100%;
+  max-width: 800px;
   box-sizing: border-box;
-  justify-content: center;
-}
-#main {
-  align-items: center;
-  width: 70%;
-  padding-top: 5%;
-  padding: 2%;
-  display: grid;
-  height: 100vh;
-  overflow-y: auto;
-  box-sizing: border-box;
+  padding: 1.5rem 1rem 0;
 }
 
-#post-name-title {
-  margin-top: 0;
-  text-decoration: underline;
+#page-header > a {
+  display: inline-block;
+  color: #800000;
+}
+
+#page-header > a h2 {
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 #title-card {
@@ -25,23 +23,67 @@
   background-color: rgba(252, 251, 248, 0.8);
   border-radius: 0.3rem;
   color: #800000;
+  overflow-wrap: anywhere;
+}
+
+#post-name-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  text-decoration: underline;
+}
+
+#post-date {
+  font-size: 0.9rem;
+}
+
+#post-desc {
+  margin-bottom: 0;
 }
 
 #post-content {
-  margin-top: 1rem;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 1rem 0 2rem;
   padding: 0.75rem 1rem;
   border-left: 3px solid #800000;
   background-color: rgba(252, 251, 248, 0.8);
   border-radius: 0.3rem;
   color: #800000;
+  overflow-wrap: anywhere;
 }
+
 #post-content > p {
-  margin: 0.1rem 0;
-  color: #800000;
-}
-.post-body p {
-  margin: 1.5rem 0;
-  line-height: 1.5;
+  margin: 1.25rem 0;
+  line-height: 1.7;
   font-size: 0.95rem;
   color: #800000;
+}
+
+#post-content > p:first-child {
+  margin-top: 0.25rem;
+}
+
+#post-content > p:last-child {
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  #page-header {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #page-header {
+    padding-top: 1.5rem;
+  }
+
+  #post-name-title {
+    font-size: 1.75rem;
+  }
+
+  #post-content {
+    margin-top: 0.75rem;
+  }
 }

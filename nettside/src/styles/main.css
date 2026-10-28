@@ -4,10 +4,11 @@ body {
   background-size: 31.25rem 14.0625rem;
   background-position: top left;
   margin: 0;
-  overflow: hidden;
   font-family: "Courier New", Courier, monospace;
   scrollbar-width: thin;
   scrollbar-color: rgba(128, 0, 0, 0.7) transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #root {
