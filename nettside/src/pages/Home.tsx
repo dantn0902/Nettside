@@ -89,8 +89,15 @@ export default function Home() {
               </a>
             </div>
           ))}
+        </div>
+      </div>
+    </>
+  );
+}
 
-          <div id="link-section single">
+{
+  /*
+  <div id="link-section single">
             <a
               className="icon"
               id="socials-button"
@@ -154,8 +161,5 @@ export default function Home() {
               </div>
             </div>
           )}
-        </div>
-      </div>
-    </>
-  );
+  */
 }

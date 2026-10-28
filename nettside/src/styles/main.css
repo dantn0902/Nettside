@@ -1,12 +1,13 @@
 body {
   background-image: url("../assets/gridbg.jpg");
   background-repeat: repeat;
+  background-attachment: fixed;
   background-size: 31.25rem 14.0625rem;
   background-position: top left;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
   scrollbar-width: thin;
-  scrollbar-color: rgba(128, 0, 0, 0.7) transparent;
+  scrollbar-color: #8b0000 transparent;
   overflow-x: hidden;
   overflow-y: auto;
 }

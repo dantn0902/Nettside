@@ -1,0 +1,49 @@
+.socials-page {
+  width: 100%;
+  max-width: 900px;
+  min-height: calc(100vh - 64px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  color: #800000;
+}
+
+.socials-page h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  color: #800000;
+  background-color: rgba(252, 251, 248, 0.9);
+  border-left: 3px solid #800000;
+  border-radius: 0.3rem;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.social-card:hover {
+  background-color: #fcf4ee;
+  transform: translateY(-2px);
+}
+
+.social-card i {
+  font-size: 1.5rem;
+}
+
+.social-card span {
+  overflow-wrap: anywhere;
+}
